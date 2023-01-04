@@ -20,3 +20,8 @@ function up(){
 function down(){
     
 }
+
+function removeItem(){
+    number = numberForm.value;
+    list.parentNode.removeChild(number);
+}
