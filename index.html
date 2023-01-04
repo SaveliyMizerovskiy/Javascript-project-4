@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List</title>
+    <link rel="stylesheet" href="mystyles.css">
+    <script src="myScript.js"></script>
+</head>
+<body onload="init();">
+    <div id="topbar">
+        <img id="logo" src="images/logo.PNG" alt="logo"> 
+        <h1>Shopping List:</h1>
+    </div>
+    <ul id="list">
+        <li></li>
+    </ul>
+    <form>
+        <label for="item">Item:</label><br>
+        <input type="text" id="itemName" name="itemName"><br>
+    </form>
+    <button onclick="addItem();">Add Item</button>
+
+    <form>
+        <label for="number">Move Item #:</label><br>
+        <input type="text" id="itemNumber" name="itemNumber"><br>
+    </form>
+    <button onclick="moveItem();">Enter</button>
+    <button onclick="up();">^</button>
+    <button onclick="down();">⌄</button>
+
+    <h3>Instructions:</h3>
+    <h4>To Add Item:</h4>
+    <p>Enter item name into the field and then press the "Add Item" button</p>
+    <h4>To Move Item:</h4>
+    <p>Enter the number of the item you want to move. Press "Enter".</p>
+    <p>Then keep pressing the arrow buttons to keep moving the item you selected.</p>
+    <h4>To Change the Item Selected:</h4>
+    <p>Just enter the new item number into the forma nd press the "Enter" button.</p>
+</body>
+</html>
