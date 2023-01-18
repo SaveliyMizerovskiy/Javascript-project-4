@@ -5,3 +5,7 @@ ul {
     list-style-type: none;
 }
 
+body{
+    background-image: conic-gradient(blue,  rgba(255,0,0,0), blue,  rgba(255,0,0,0), blue);
+}
+

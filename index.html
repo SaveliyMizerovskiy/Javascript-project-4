@@ -18,17 +18,24 @@
     </ul>
     <form>
         <label for="item">Item:</label><br>
-        <input type="text" id="itemName" name="itemName"><br>
+        <input type="text" id="item" name="item"><br>
     </form>
     <button onclick="addItem();">Add Item</button>
 
     <form>
         <label for="number">Move Item #:</label><br>
-        <input type="text" id="itemNumber" name="itemNumber"><br>
+        <input type="text" id="move" name="move"><br>
     </form>
-    <button onclick="moveItem();">Enter</button>
+
     <button onclick="up();">^</button>
     <button onclick="down();">⌄</button>
+
+    <form>
+        <label for="number">Remove Item #:</label><br>
+        <input type="text" id="remove" name="removeItem"><br>
+    </form>
+
+    
     <button onclick="removeItem();">Remove Item</button>
 
     <h3>Instructions:</h3>
@@ -40,7 +47,7 @@
     <h4>To Change the Item Selected:</h4>
     <p>Just enter the new item number into the forma nd press the "Enter" button.</p>
     <h4>To Remove Item:</h4>
-    <p>Enter the number of item you want to remove into the "Move Item #:".</p>
+    <p>Enter the number of item you want to remove into the "Remove Item #:".</p>
     <p>Then press the "Remove Item" button.</p>
 </body>
 </html>
