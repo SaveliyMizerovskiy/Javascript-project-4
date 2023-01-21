@@ -1,7 +1,7 @@
 const list = [];
 
 function init() {
-    listOutput = document.getElementById("list");
+   output = document.getElementById("list");
 }
 
 function addItem() {
@@ -12,37 +12,37 @@ function addItem() {
 }
 
 function removeItem() {
-    remove = (document.getElementById("remove")).value;
-    list.splice(parseInt(remove) - 1, 1);
+    rindex = (document.getElementById("remove")).value;
+    list.splice(parseInt(rindex) - 1, 1);
     display();
 }
 
 function up() {
     move = (document.getElementById("move")).value;
-    let index = parseInt(move) - 1;
-    if (index > 0) {
-        let temp = list[index];
-        list[index] = list[index - 1];
-        list[index - 1] = temp;
+    let uindex = parseInt(move) - 1;
+    if (uindex > 0) {
+        let temp = list[uindex];
+        list[uindex] = list[uindex - 1];
+        list[mindex - 1] = temp;
     }
     display();
 }
 
 function down() {
     move = (document.getElementById("move")).value;
-    let index = parseInt(move) - 1;
-    if (index > 0) {
-        let temp = list[index];
-        list[index] = list[index + 1];
-        list[index + 1] = temp;
+    let dindex = parseInt(move) - 1;
+    if (dindex > 0) {
+        let temp = list[dindex];
+        list[dindex] = list[dindex + 1];
+        list[dindex + 1] = temp;
     }
     display();
 }
 
 function display() {
-    listOutput.innerHTML = "";
+    output.innerHTML = "";
     for (i in list) {
         let num = parseInt(i) + 1;
-        listOutput.innerHTML += num + ". " + list[i] + "<br>";
+        output.innerHTML += num + ". " + list[i] + "<br>";
     }
 }
